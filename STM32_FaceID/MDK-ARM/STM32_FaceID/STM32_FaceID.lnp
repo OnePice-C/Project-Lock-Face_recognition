@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"stm32_faceid\startup_stm32f103xb.o"
+"stm32_faceid\main.o"
+"stm32_faceid\stm32f1xx_it.o"
+"stm32_faceid\stm32f1xx_hal_msp.o"
+"stm32_faceid\fonts.o"
+"stm32_faceid\st7789.o"
+"stm32_faceid\stm32f1xx_hal_gpio_ex.o"
+"stm32_faceid\stm32f1xx_hal_spi.o"
+"stm32_faceid\stm32f1xx_hal.o"
+"stm32_faceid\stm32f1xx_hal_rcc.o"
+"stm32_faceid\stm32f1xx_hal_rcc_ex.o"
+"stm32_faceid\stm32f1xx_hal_gpio.o"
+"stm32_faceid\stm32f1xx_hal_dma.o"
+"stm32_faceid\stm32f1xx_hal_cortex.o"
+"stm32_faceid\stm32f1xx_hal_pwr.o"
+"stm32_faceid\stm32f1xx_hal_flash.o"
+"stm32_faceid\stm32f1xx_hal_flash_ex.o"
+"stm32_faceid\stm32f1xx_hal_exti.o"
+"stm32_faceid\stm32f1xx_hal_tim.o"
+"stm32_faceid\stm32f1xx_hal_tim_ex.o"
+"stm32_faceid\stm32f1xx_hal_uart.o"
+"stm32_faceid\system_stm32f1xx.o"
+--strict --scatter "STM32_FaceID\STM32_FaceID.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32_FaceID.map" -o STM32_FaceID\STM32_FaceID.axf
